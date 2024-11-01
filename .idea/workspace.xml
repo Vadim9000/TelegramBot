@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8125852-0608-405b-9b7f-4032cc3e6d87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/example.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/zmeyka.py" afterDir="false" />
+    <list default="true" id="b8125852-0608-405b-9b7f-4032cc3e6d87" name="Changes" comment="добавил функцию возврата Дата/время&#10;добавил приветствие к пользователю&#10;добавил функцию возврата анекдотов">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/handlers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/keyboards.py" afterDir="false" />
@@ -162,8 +160,18 @@
       <workItem from="1730381379832" duration="5716000" />
       <workItem from="1730392982373" duration="3959000" />
       <workItem from="1730397260889" duration="4541000" />
-      <workItem from="1730404169407" duration="1934000" />
+      <workItem from="1730404169407" duration="2706000" />
+      <workItem from="1730488281585" duration="3321000" />
     </task>
+    <task id="LOCAL-00001" summary="добавил функцию возврата Дата/время&#10;добавил приветствие к пользователю&#10;добавил функцию возврата анекдотов">
+      <option name="closed" value="true" />
+      <created>1730406364911</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730406364911</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,8 +188,12 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="добавил функцию возврата Дата/время&#10;добавил приветствие к пользователю&#10;добавил функцию возврата анекдотов" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил функцию возврата Дата/время&#10;добавил приветствие к пользователю&#10;добавил функцию возврата анекдотов" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TelegramBot$zmeyka.coverage" NAME="zmeyka Coverage Results" MODIFIED="1730158226499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TelegramBot$bot_meme1.coverage" NAME="bot meme1 Coverage Results" MODIFIED="1730406100599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TelegramBot$bot_meme1.coverage" NAME="bot meme1 Coverage Results" MODIFIED="1730491589509" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

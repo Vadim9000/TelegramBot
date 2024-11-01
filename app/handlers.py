@@ -24,7 +24,8 @@ async def cmd_help(message: Message):
                          'Доступные команды:\n'
                          '*/date- Показывает  текущую дату\n'
                          '*/time- Показывает текущее время\n'
-                         '*/meme- Выводит рандомную шутку')
+                         '*/meme- Выводит рандомную шутку\n'
+                         '*/datetime - Выводит текущие дату и время')
 
 
 @router.message(F.text == 'Помощь')
@@ -33,7 +34,8 @@ async def cmd_help(message: Message):
                          'Доступные команды:\n'
                          '*/date- Показывает  текущую дату\n'
                          '*/time- Показывает текущее время\n'
-                         '*/meme- Выводит рандомную шутку')
+                         '*/meme- Выводит рандомную шутку\n'
+                         '*/datetime - Выводит текущие дату и время')
 
 
 @router.message(F.text == 'заказчик')
@@ -46,9 +48,9 @@ async def cmd_time(message: Message):
     await message.answer(f"Сегодняшняя дата: {datetime.now().date()} ")
 
 
-# @router.message(Command('datetime'))
-# async def cmd_time(message: Message):
-#     await message.answer(f"Сегодняшние дата и время: {datetime.now().date()} ")
+@router.message(Command('datetime'))
+async def cmd_time(message: Message):
+    await message.answer(f"Сегодняшние дата и время: {datetime.now()} ")
 
 
 @router.message(Command('time'))
@@ -76,6 +78,12 @@ async def cmd_time(message: Message):
 async def cmd_time(message: Message):
     await message.answer(f" {catch_joke_error()} ")
 
+
+@router.message(F.text == 'Дата и время')
+async def cmd_time(message: Message):
+    await message.answer(f"Сегодняшние дата и время: {datetime.now()} ")
+
+
 #Использовалась рекурсия*
 def catch_joke_error():
     try:
@@ -85,7 +93,6 @@ def catch_joke_error():
         return json_joke['content']
     except Exception:
         return catch_joke_error()
-
 
 
 
