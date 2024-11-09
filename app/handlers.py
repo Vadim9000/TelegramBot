@@ -43,19 +43,20 @@ async def balance(message: Message):
     await message.answer('хуесос!')
 
 
+now = datetime.now()
 @router.message(Command('date'))
 async def cmd_time(message: Message):
-    await message.answer(f"Сегодняшняя дата: {datetime.now().date()} ")
+    await message.answer(f"Сегодняшняя дата: {now:%d.%m.%Yг.} ")
 
 
 @router.message(Command('datetime'))
 async def cmd_time(message: Message):
-    await message.answer(f"Сегодняшние дата и время: {datetime.now()} ")
+    await message.answer(f"Сегодняшние дата: {now:%d.%m.%Yг.; текущее время: %H:%M:%S} ")
 
 
 @router.message(Command('time'))
 async def cmd_time(message: Message):
-    await message.answer(f"Время: {datetime.now().time()} ")
+    await message.answer(f"Время: {now:%H:%M:%S} ")
 
 
 @router.message(Command('meme'))
@@ -66,12 +67,12 @@ async def cmd_time(message: Message):
 
 @router.message(F.text == 'Дата')
 async def balance(message: Message):
-    await message.answer(f"Сегодняшняя дата: {datetime.now().date()} ")
+    await message.answer(f"Сегодняшняя дата: {now:%d.%m.%Yг.} ")
 
 
 @router.message(F.text == 'Время')
 async def cmd_time(message: Message):
-    await message.answer(f"Время: {datetime.now().time()} ")
+    await message.answer(f"Время: {now:%H:%M:%S} ")
 
 
 @router.message(F.text == 'Анекдоты')
@@ -81,7 +82,7 @@ async def cmd_time(message: Message):
 
 @router.message(F.text == 'Дата и время')
 async def cmd_time(message: Message):
-    await message.answer(f"Сегодняшние дата и время: {datetime.now()} ")
+    await message.answer(f"Сегодняшние дата: {now:%d.%m.%Yг.; текущее время: %H:%M:%S} ")
 
 
 #Использовалась рекурсия*
