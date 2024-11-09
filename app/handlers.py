@@ -6,11 +6,14 @@ from datetime import datetime
 import requests
 import app.keyboards as keyboards
 import json
+from dotenv import load_dotenv
+import os
 
 router = Router()
 
 
-URL = 'http://rzhunemogu.ru/RandJSON.aspx?CType=1'
+load_dotenv()
+URL = (os.getenv('URL'))
 
 
 @router.message(CommandStart())
@@ -62,7 +65,7 @@ async def cmd_time(message: Message):
 @router.message(Command('meme'))
 async def cmd_time(message: Message):
     r = requests.get(URL)
-    await message.answer(f" {r.text} ")
+    await message.answer(f" {catch_joke_error()} ")
 
 
 @router.message(F.text == 'Дата')

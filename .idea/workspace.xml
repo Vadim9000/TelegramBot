@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8125852-0608-405b-9b7f-4032cc3e6d87" name="Changes" comment="добавил функцию возврата Дата и время">
+    <list default="true" id="b8125852-0608-405b-9b7f-4032cc3e6d87" name="Changes" comment="отформатировал дату время скрыл токен">
+      <change afterPath="$PROJECT_DIR$/example.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot meme1.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot meme1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot meme1.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot meme.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +63,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.bot meme1">
-    <configuration name="bot meme1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="bot meme" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TelegramBot" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,7 +77,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bot meme1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bot meme.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -162,7 +162,7 @@
       <workItem from="1730397260889" duration="4541000" />
       <workItem from="1730404169407" duration="2706000" />
       <workItem from="1730488281585" duration="3624000" />
-      <workItem from="1731168319078" duration="2665000" />
+      <workItem from="1731168319078" duration="5369000" />
     </task>
     <task id="LOCAL-00001" summary="добавил функцию возврата Дата/время&#10;добавил приветствие к пользователю&#10;добавил функцию возврата анекдотов">
       <option name="closed" value="true" />
@@ -180,7 +180,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730491624624</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="отформатировал дату время скрыл токен">
+      <option name="closed" value="true" />
+      <created>1731173408962</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731173408962</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,10 +208,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="добавил функцию возврата Дата/время&#10;добавил приветствие к пользователю&#10;добавил функцию возврата анекдотов" />
     <MESSAGE value="добавил функцию возврата Дата и время" />
-    <option name="LAST_COMMIT_MESSAGE" value="добавил функцию возврата Дата и время" />
+    <MESSAGE value="отформатировал дату время скрыл токен" />
+    <option name="LAST_COMMIT_MESSAGE" value="отформатировал дату время скрыл токен" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TelegramBot$zmeyka.coverage" NAME="zmeyka Coverage Results" MODIFIED="1730158226499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TelegramBot$bot_meme1.coverage" NAME="bot meme1 Coverage Results" MODIFIED="1731173347576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TelegramBot$bot_meme1.coverage" NAME="bot meme Coverage Results" MODIFIED="1731175737441" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
