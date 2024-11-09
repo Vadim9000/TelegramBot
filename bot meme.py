@@ -5,7 +5,6 @@ from dotenv import load_dotenv
 import os
 
 
-
 async def main():
     load_dotenv()
     bot = Bot(os.getenv('TOKEN'))
@@ -19,7 +18,3 @@ if __name__ == '__main__':
         asyncio.run(main())
     except KeyboardInterrupt:
         print('Bot is shutting down...')
-
-
-
-

@@ -18,7 +18,7 @@ URL = (os.getenv('URL'))
 
 @router.message(CommandStart())
 async def cmd_start(message: types.Message):
-    await message.answer(f"Добрый день,  {message.chat.username},  давай пошутим?", reply_markup=keyboards.main)
+    await message.answer(f"Доброе время суток,  {message.chat.username},  давай пошутим?", reply_markup=keyboards.main)
 
 
 @router.message(Command('help'))
@@ -46,46 +46,54 @@ async def balance(message: Message):
     await message.answer('хуесос!')
 
 
-now = datetime.now()
 @router.message(Command('date'))
 async def cmd_time(message: Message):
-    await message.answer(f"Сегодняшняя дата: {now:%d.%m.%Yг.} ")
+    await message.answer(f"Сегодняшняя дата: {datetime.now():%d.%m.%Yг.}")
 
 
 @router.message(Command('datetime'))
 async def cmd_time(message: Message):
-    await message.answer(f"Сегодняшние дата: {now:%d.%m.%Yг.; текущее время: %H:%M:%S} ")
+    await message.answer(f"Сегодняшние дата: {datetime.now():%d.%m.%Yг.; текущее время: %H:%M:%S}")
 
 
 @router.message(Command('time'))
 async def cmd_time(message: Message):
-    await message.answer(f"Время: {now:%H:%M:%S} ")
+    await message.answer(f"Время: {datetime.now():%H:%M:%S}")
 
 
 @router.message(Command('meme'))
 async def cmd_time(message: Message):
-    r = requests.get(URL)
-    await message.answer(f" {catch_joke_error()} ")
+    await message.answer(f" {catch_joke_error()}")
 
 
 @router.message(F.text == 'Дата')
 async def balance(message: Message):
-    await message.answer(f"Сегодняшняя дата: {now:%d.%m.%Yг.} ")
+    await message.answer(f"Сегодняшняя дата: {datetime.now():%d.%m.%Yг.}")
 
 
 @router.message(F.text == 'Время')
 async def cmd_time(message: Message):
-    await message.answer(f"Время: {now:%H:%M:%S} ")
+    await message.answer(f"Время: {datetime.now():%H:%M:%S}")
 
 
 @router.message(F.text == 'Анекдоты')
 async def cmd_time(message: Message):
-    await message.answer(f" {catch_joke_error()} ")
+    await message.answer(f" {catch_joke_error()}")
+
+
+@router.message(F.text == 'хаха')
+async def cmd_time(message: Message):
+    await message.answer(f" {catch_joke_error()}")
+
+
+@router.message(F.text == 'лол')
+async def cmd_time(message: Message):
+    await message.answer(f" {catch_joke_error()}")
 
 
 @router.message(F.text == 'Дата и время')
 async def cmd_time(message: Message):
-    await message.answer(f"Сегодняшние дата: {now:%d.%m.%Yг.; текущее время: %H:%M:%S} ")
+    await message.answer(f"Сегодняшние дата: {datetime.now():%d.%m.%Yг.; текущее время: %H:%M:%S}")
 
 
 #Использовалась рекурсия*
