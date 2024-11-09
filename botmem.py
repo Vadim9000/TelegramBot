@@ -7,6 +7,7 @@ import os
 
 async def main():
     load_dotenv()
+#Токен изъят в env
     bot = Bot(os.getenv('TOKEN'))
     dp = Dispatcher()
     dp.include_router(router)
@@ -18,3 +19,4 @@ if __name__ == '__main__':
         asyncio.run(main())
     except KeyboardInterrupt:
         print('Bot is shutting down...')
+

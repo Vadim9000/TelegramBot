@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8125852-0608-405b-9b7f-4032cc3e6d87" name="Changes" comment="скрыл url">
+    <list default="true" id="b8125852-0608-405b-9b7f-4032cc3e6d87" name="Changes" comment="поправил нюансы">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot meme.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.json" beforeDir="false" afterPath="$PROJECT_DIR$/example.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/keyboards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot meme.py" beforeDir="false" afterPath="$PROJECT_DIR$/botmem.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,28 +42,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.bot meme1.executor&quot;: &quot;Run&quot;,
-    &quot;Python.zmeyka.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.bot meme1.executor": "Run",
+    "Python.botmem.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.zmeyka.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.bot meme1">
-    <configuration name="bot meme" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.botmem">
+    <configuration name="botmem" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="TelegramBot" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -77,7 +79,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bot meme.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/botmem.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,7 +136,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.bot meme1" />
+        <item itemvalue="Python.botmem" />
         <item itemvalue="Python.zmeyka" />
       </list>
     </recent_temporary>
@@ -162,7 +164,8 @@
       <workItem from="1730397260889" duration="4541000" />
       <workItem from="1730404169407" duration="2706000" />
       <workItem from="1730488281585" duration="3624000" />
-      <workItem from="1731168319078" duration="9421000" />
+      <workItem from="1731168319078" duration="10926000" />
+      <workItem from="1731187028924" duration="7305000" />
     </task>
     <task id="LOCAL-00001" summary="добавил функцию возврата Дата/время&#10;добавил приветствие к пользователю&#10;добавил функцию возврата анекдотов">
       <option name="closed" value="true" />
@@ -196,7 +199,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731176104338</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="поправил нюансы">
+      <option name="closed" value="true" />
+      <created>1731180544962</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1731180544962</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,10 +229,13 @@
     <MESSAGE value="добавил функцию возврата Дата и время" />
     <MESSAGE value="отформатировал дату время скрыл токен" />
     <MESSAGE value="скрыл url" />
-    <option name="LAST_COMMIT_MESSAGE" value="скрыл url" />
+    <MESSAGE value="поправил нюансы" />
+    <option name="LAST_COMMIT_MESSAGE" value="поправил нюансы" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TelegramBot$zmeyka.coverage" NAME="zmeyka Coverage Results" MODIFIED="1730158226499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/TelegramBot$bot_meme1.coverage" NAME="bot meme Coverage Results" MODIFIED="1731177318957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TelegramBot$main.coverage" NAME="main Coverage Results" MODIFIED="1731189537704" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TelegramBot$bot_meme1.coverage" NAME="bot meme Coverage Results" MODIFIED="1731181795268" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/TelegramBot$botmem.coverage" NAME="botmem Coverage Results" MODIFIED="1731194399885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
